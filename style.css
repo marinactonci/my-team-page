@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.left-p{
+    font-size: 36px;
+    font-family: 'PT Serif', monospace;
+    font-weight: 700;
+}
+
+header h2{
+    font-family: 'Poppins', monospace;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+header p{
+    font-family: 'Poppins', monospace;
+    font-weight: 400;
+    font-size: 18px;
+    width: 440px;
+}
+
+header div p{
+    margin-top: 10px;
+}
+
+.main{
+    margin-top: 100px;
+    margin-bottom: 220px;
+    display: flex;
+    justify-content: center;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 95px;
+    row-gap: 130px;
+}
+
+.grid-card div{
+    display: flex;
+}
+
+img {
+    width: 240px;
+}
+
+.job-title {
+    font-family: 'PT Serif', monospace;
+    font-weight: 400;
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    margin-left: 10px;
+}
+
+.name {
+    font-family: 'Poppins', monospace;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.desktop-translate {
+    transform: translateY(105px);
+}
+
+footer {
+    margin-bottom: 24px;
+}
+
+footer p{
+    font-family: 'Montserrat', monospace;
+    font-weight: 400;
+    font-size: 14px;
+    color: #BDBDBD;
+    text-align: center;
+}
+
+footer p a{
+    text-decoration: none;
+    color: #BDBDBD;
+}
+
+@media (max-width: 800px){
+    header {
+        flex-direction: column;
+        margin-top: 71px;
+        margin-left: 12px;
+    }
+
+    header h2{
+        margin-top: 38px;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 27px;
+        row-gap: 64px;
+    }
+
+    img {
+        width: 140px;
+    }
+
+    .desktop-translate{
+        transform: translateY(0);
+    }
+
+    .mobile-translate {
+        transform: translateY(60px);
+    }
+}
